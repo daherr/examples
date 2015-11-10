@@ -81,6 +81,8 @@ public class Ex6_1 {
          */
         Foo( int f ) {
             foo = f;
+            // creates the object 
+            
         }
        
         public int getFoo() {

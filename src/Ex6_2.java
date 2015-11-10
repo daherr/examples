@@ -31,8 +31,8 @@ public class Ex6_2 {
         }
         
         public void setLastName( String n ) {
-            
-            if( !n.matches("^[A-Za-z]+$") ) {
+            // fix line 35 so it accepts special characters found in last names ex. ' - spaces 
+            if( !n.matches("^[A-Za-z]+$") ) { // this line is called a regular expression a.k.a. reg expression + means accept any number of letters / characters
                 System.out.println( "Invalid characters in last name" );
             } else {
                 lName = n;
@@ -53,6 +53,8 @@ public class Ex6_2 {
         public String getMiddleName() {
             return mName;
         }
+        
+        //ex phone reg ex: "^[0-9]{3} - [0-9]{3} - [0-9]{4}$"
         /*
          * Name (first, last, middle)
          * Prefix
