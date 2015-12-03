@@ -115,6 +115,23 @@ public class Ex6_2 {
         public String getPhoneNum(){
         	return phoneNum;
         }
+        public void setEmail( String n ){
+      	  if( !n.matches("^[A-Za-z0-9 @.,-]+$") ) { 
+              System.out.println( "Invalid characters in email" );
+          } else {
+    	email = n;
+          }	
+        }
+        public String setEmail(){
+        	return email;
+        }
+        public void setAdress( String n ){
+         	  if( !n.matches("^[A-Za-z0-9 @.,-]+$") ) { 
+                  System.out.println( "Invalid characters in email" );
+              } else {
+        	 = n;
+              }	
+        }
         //ex phone reg ex: "^[0-9]{3} - [0-9]{3} - [0-9]{4}$"
         /*
          * Name (first, last, middle)
