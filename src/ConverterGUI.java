@@ -59,7 +59,7 @@ public class ConverterGUI {
         layout.setConstraints( inputField, c );
         myFrame.add( inputField );
         
-        c.weightx = 0;
+        c.weightx = 0;  
         c.gridwidth = GridBagConstraints.REMAINDER;
         c.gridx = 2;
         c.gridy = 0;
